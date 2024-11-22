@@ -24,6 +24,11 @@ public static class Extensions
             {
                 return GetAwaiter(TimeSpan.FromMinutes(value));
             }
+
+            // https://github.com/AntonBergaker/InterpolatedParser
+            //int seconds = 0;
+            //InterpolatedParsing.InterpolatedParser.Parse($"{seconds} seconds", x);
+            //return GetAwaiter(TimeSpan.FromSeconds(value));
         }
 
         // DateTime
