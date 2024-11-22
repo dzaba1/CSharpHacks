@@ -15,24 +15,24 @@ namespace System
     }
 }
 
-namespace WriteLine
-{
-    public static class Console
-    {
-        public static void WriteLine(string s)
-        {
-            System.Console.WriteLine(s);
-        }
+//namespace WriteLine
+//{
+//    public static class Console
+//    {
+//        public static void WriteLine(string s)
+//        {
+//            System.Console.WriteLine(s);
+//        }
 
-        public static ConsoleTextWriter Out => new ConsoleTextWriter();
-    }
+//        public static ConsoleTextWriter Out => new ConsoleTextWriter();
+//    }
 
-    public class ConsoleTextWriter
-    {
-        public static ConsoleTextWriter operator <<(ConsoleTextWriter writer, string s)
-        {
-            System.Console.WriteLine(s);
-            return writer;
-        }
-    }
-}
+//    public class ConsoleTextWriter
+//    {
+//        public static ConsoleTextWriter operator <<(ConsoleTextWriter writer, string s)
+//        {
+//            System.Console.WriteLine(s);
+//            return writer;
+//        }
+//    }
+//}
