@@ -5,6 +5,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>false</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <InterceptorsPreviewNamespaces>$(InterceptorsPreviewNamespaces);WriteLine</InterceptorsPreviewNamespaces>
   </PropertyGroup>
 
 </Project>

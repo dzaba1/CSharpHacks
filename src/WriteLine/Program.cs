@@ -9,6 +9,7 @@ internal class Program
         String s = "Hello World!";
 
         Console.WriteLine(s);
+        Console.Out.WriteLine("Hello World!");
         _ = Console.Out << s << "test";
     }
 }
