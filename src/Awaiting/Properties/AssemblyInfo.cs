@@ -41,12 +41,13 @@ public static class Extensions
 
         // AI
         var ai = new DateTimeAssistant();
-        return GetAwaiter(ai.AskForDateAsync(x).Result.Value);
+        var aiDate = ai.AskForDateAsync(x).Result.Value;
+        return GetAwaiter(aiDate);
     }
 
     public static TimeSpanAwaiter GetAwaiter(this DateTime x)
     {
-        var span = x - DateTime.Now;
+        var span = x - DateTime.Today;
         return new TimeSpanAwaiter(span);
     }
 

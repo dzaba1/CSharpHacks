@@ -48,7 +48,7 @@ public sealed class DateTimeAssistant
 
         var resp = respBuilder.ToString().Trim();
 
-        Debug.WriteLine(resp);
+        Debug.WriteLine($"AI date: {resp}");
 
         if (resp.Contains("N/A"))
         {
@@ -56,6 +56,10 @@ public sealed class DateTimeAssistant
         }
 
         var match = DateRegex.Match(resp);
-        return new DateTime(int.Parse(match.Groups["Y"].Value), int.Parse(match.Groups["M"].Value), int.Parse(match.Groups["Y"].Value));
+        var year = int.Parse(match.Groups["Y"].Value);
+        var month = int.Parse(match.Groups["M"].Value);
+        var day = int.Parse(match.Groups["D"].Value);
+
+        return new DateTime(year, month, day);
     }
 }

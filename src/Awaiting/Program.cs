@@ -16,7 +16,7 @@ internal static class Program
         //await "28/11/2024";
         //await (28 / (Month)11 / 2024);
         //await 11.November(2024);
-        //await "next worldwide pizza day";
+        //await "next Ben Stiller birthday";
 
         Console.WriteLine(DateTime.Now);
     }
