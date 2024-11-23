@@ -10,12 +10,12 @@ internal static class Program
         //await TimeSpan.FromSeconds(2);
         //await "2 seconds";
 
-        //await Task.Delay(new DateTime(2024, 11, 28) - DateTime.Now);
-        //await new DateTime(2024, 11, 28);
-        //await "28.11.2024";
-        //await "28/11/2024";
-        //await (28 / (Month)11 / 2024);
-        //await 11.November(2024);
+        //await Task.Delay(new DateTime(2024, 11, 30) - DateTime.Now);
+        //await new DateTime(2024, 11, 30);
+        //await "30.11.2024";
+        //await "30/11/2024";
+        //await (30 / (Month)11 / 2024);
+        //await 30.November(2024);
         //await "next Ben Stiller birthday";
 
         Console.WriteLine(DateTime.Now);
