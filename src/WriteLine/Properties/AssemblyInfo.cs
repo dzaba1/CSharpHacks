@@ -1,7 +1,5 @@
-﻿using System.IO;
-using System.Linq;
+﻿using System.Linq;
 using System;
-using System.Runtime.CompilerServices;
 
 namespace System
 {
@@ -42,24 +40,5 @@ namespace WriteLine
             System.Console.WriteLine(s);
             return writer;
         }
-    }
-
-    public static class Interceptors
-    {
-        [InterceptsLocation(@"..\Program.cs", 12, 21)]
-        public static void WriteLineInterceptor(this TextWriter cmd, string text)
-        {
-            var reversed = text.Reverse();
-            var newStr = new string(reversed.ToArray());
-            cmd.WriteLine(newStr);
-        }
-    }
-}
-
-namespace System.Runtime.CompilerServices
-{
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
-    public sealed class InterceptsLocationAttribute(string filePath, int line, int character) : Attribute
-    {
     }
 }
