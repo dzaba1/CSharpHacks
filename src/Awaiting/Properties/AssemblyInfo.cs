@@ -106,7 +106,7 @@ public class DatePart
 {
     public DatePartType? Type { get; set; }
     public int Value { get; set; }
-    public DatePart? Prev { get; set; }
+    public DatePart Prev { get; set; }
 
     public static implicit operator DatePart(int value)
     {
